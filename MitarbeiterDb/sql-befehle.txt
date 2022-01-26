@@ -1,0 +1,82 @@
+-- SQL Befehle für MySQL/MariaDB
+
+/*********************************************************/
+/*******************  Initialisierung  *******************/
+/*********************************************************/
+
+-- 1. Datenbank erstellen (mit UTF8-Kodierung, ohne Unterscheidung Groß/Kleinschreibung)
+create database EmployeeDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- 2. zur DB wechseln
+use EmployeeDB;
+
+-- 3. Tabelle erstellen
+create table Employees (
+	id    int   NOT NULL  AUTO_INCREMENT KEY,
+	name  varchar(150)  NOT NULL,
+	areaCode  int   NOT NULL,
+	city  varchar(150)  NOT NULL,
+	birthDate date    NOT NULL,
+	entryDate date    NOT NULL,
+	salary double	 NOT NULL,
+	typ  varchar(50) NOT NULL,
+	bonus double    NULL,
+	specialField varchar(200) NULL, 
+	experte   bit    NOT NULL,
+	manager  bit    NOT NULL,
+	comment varchar(1000) NULL
+);
+
+/*********************************************************/
+/*******************  DB Löschen	**********************/
+/*********************************************************/
+
+/*
+--Datenbank löschen
+drop database EmployeeDB;
+
+-- Tabelle löschen
+drop table Employees;
+*/ 
+
+
+
+/*********************************************************/
+/*******************  	Abfragen	**********************/
+/*********************************************************/
+select * from Students;
+select * from Students where name like 'k%';
+select * from Students where id = 2;
+select * from Students order by name;
+select * from Students where comment is null;
+select * from Students where comment is not null;
+
+
+/*********************************************************/
+/*******************  Updates		**********************/
+/*********************************************************/
+
+insert into Employees (name, areaCode, city, birthDate, entryDate, salary , type, bonus, specialField,  comment)
+values ('Karo',  1100, 'Vienna', '1995-06-10','2018-06-10', 1000, 'Experte', 1, 'Very diligent student!');
+
+
+update Students set city='Wien', areaCode = 1010 where id = 1;
+
+delete from Students where id = 1;
+delete from Students where name like 'tom%';
+
+
+-- alle Tabellen einer Datenbank anzeigen
+show tables;
+
+-- alle Spalten einer Tabelle anzeigen
+show columns from Students;
+
+-- key-Spalten anzeigen
+select * from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_SCHEMA='CourseDB';
+
+
+
+
+
+

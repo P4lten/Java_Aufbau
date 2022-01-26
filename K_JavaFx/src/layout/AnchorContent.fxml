@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Tooltip?>
+
+<!-- die Komponenten werden an einer oder mehreren Seiten verankert -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+	<padding>
+		<Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+	</padding>
+	<Text styleClass="title" text="Willkommen!" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+	<Label text="Dein Name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+	<TextField AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="10.0"
+		AnchorPane.topAnchor="50.0">
+		<tooltip>
+			<Tooltip text="links, rechts und oben verankert" />
+		</tooltip>
+	</TextField>
+	<Button defaultButton="true" mnemonicParsing="false" text="Klick mich!"
+		AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+		<tooltip>
+			<Tooltip text="rechts und unten verankert" />
+		</tooltip>
+	</Button>
+</AnchorPane>

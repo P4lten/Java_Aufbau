@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<!-- die Nodes werden nebeneinander angezeigt, falls kein Platz mehr ist, 
+wird eine neue Zeile begonnen -->
+<FlowPane xmlns:fx="http://javafx.com/fxml/1" hgap="10" vgap="10" id="flowPane">
+	<padding>
+		<Insets top="20" right="10" bottom="20" left="10" />
+	</padding>
+	<Label>Flow Content 1</Label>
+	<Button text="Action 1"></Button>
+	<ImageView scaleX="0.75" scaleY="0.75">
+		<image>
+			<Image url="@logo-wifi.gif" />
+		</image>
+	</ImageView>
+	<Text text="More content and more and more..." />
+
+	<Label>Flow Content 2</Label>
+	<Button text="Action 2"></Button>
+	<ImageView scaleX="0.75" scaleY="0.75">
+		<image>
+			<Image url="@logo-wifi.gif" />
+		</image>
+	</ImageView>
+
+</FlowPane>
+

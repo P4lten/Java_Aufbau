@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<!--  die Nodes werden in gleich großen Kacheln angezeigt -->
+<TilePane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" hgap="10"
+	vgap="10" tileAlignment="TOP_LEFT" >
+	<padding>
+		<Insets top="20" right="10" bottom="20" left="10" />
+	</padding>
+	<Label>Content 1</Label>
+	<Button text="Action 1"></Button>
+	<ImageView>
+		<image>
+			<Image url="@logo-wifi.gif" />
+		</image>
+	</ImageView>
+	<Label>Large Content 2</Label>
+	<Button text="Action 2"></Button>
+	<ImageView>
+		<image>
+			<Image url="@logo-wifi.gif" />
+		</image>
+	</ImageView>
+
+</TilePane>
+

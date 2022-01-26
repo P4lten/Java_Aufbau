@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" styleClass="combo-box"
+	stylesheets="@employeeStyles.css" vgap="20.0" xmlns="http://javafx.com/javafx/15.0.1"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="mitarbeiter.program.EmployeeTableController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" prefHeight="30.0" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" />
+	</rowConstraints>
+	<children>
+		<AnchorPane />
+		<Label alignment="CENTER" contentDisplay="TOP" styleClass="title"
+			stylesheets="@employeeStyles.css" text="Employee repository" GridPane.halignment="CENTER">
+			<font>
+				<Font size="25.0" />
+			</font>
+		</Label>
+		<TableView fx:id="tblEmployees" onKeyPressed="#onKey" onMouseClicked="#onClicked"
+			prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+			<columns>
+				<TableColumn fx:id="colId" editable="false" prefWidth="75.0" text="ID" />
+				<TableColumn fx:id="colTyp" prefWidth="75.0" text="Typ" />
+				<TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+				<TableColumn fx:id="colBirthdate" editable="false" maxWidth="1.7976931348623157E308"
+					prefWidth="100.0" text="Geb. Datum" />
+				<TableColumn fx:id="colEntry" editable="false" prefWidth="100.0" text="Eintr. Datum" />
+			</columns>
+		</TableView>
+
+
+
+
+		<VBox fx:id="boxEmployee" prefHeight="287.0" prefWidth="346.0" spacing="5.0"
+			GridPane.rowIndex="2">
+			<children>
+				<HBox prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<Label text="Ausgewählter Mitarbeiter" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Mitarbeiter Typ:" />
+						<Label fx:id="lblTyp" text="TYPE" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="ID: " />
+						<Label fx:id="lblId" text="ID" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Name: " />
+						<Label fx:id="lblName" text="NAME" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Adresse:" />
+						<Label fx:id="lblAreaCode" text="ADRESSE" />
+						<Label fx:id="lblCity" text="CITY" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Geburtsdatum: " />
+						<Label fx:id="lblBirthdate" text="Birthdate" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Eintrittsdatum:" />
+						<Label fx:id="lblEntry" text="Eintrittsdatum" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Gehalt:" />
+						<Label fx:id="lblSalary" text="Gehalt" />
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+					<children>
+						<Label text="Kommentar:" />
+						<Label fx:id="lblComment" text="Kommentar" />
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="3">
+			<children>
+				<Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addEmployee" prefWidth="80.0"
+					text="Neu" />
+				<Button fx:id="btnEdit" mnemonicParsing="false" onAction="#editEmployee" prefWidth="80.0"
+					text="Bearbeiten" />
+				<Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteEmployee"
+					prefWidth="80.0" text="Löschen" />
+				<Button fx:id="btnReload" mnemonicParsing="false" onAction="#reload" prefWidth="80.0"
+					text="Neu laden" />
+			</children>
+		</HBox>
+	</children>
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+</GridPane>

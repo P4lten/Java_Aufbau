@@ -1,0 +1,89 @@
+-- SQL Befehle für MySQL/MariaDB
+
+/*********************************************************/
+/*******************  Initialisierung  *******************/
+/*********************************************************/
+
+-- 1. Datenbank erstellen (mit UTF8-Kodierung, ohne Unterscheidung Groß/Kleinschreibung)
+create database CourseDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- 2. zur DB wechseln
+use CourseDB;
+
+-- 3. Tabelle erstellen
+create table Students (
+	id    int   NOT NULL  AUTO_INCREMENT KEY,
+	name  varchar(150)  NOT NULL,
+	areaCode  int   NOT NULL,
+	city  varchar(150)  NOT NULL,
+	birthDate date    NOT NULL,
+	gender  varchar(50) NOT NULL,
+	language  varchar(150)  NOT NULL,
+	xml   bit    NOT NULL,
+	html  bit    NOT NULL,
+	fxml  bit   NOT NULL,
+	comment varchar(1000) NULL
+);
+
+/*********************************************************/
+/*******************  DB Löschen	**********************/
+/*********************************************************/
+
+/*
+--Datenbank löschen
+drop database CourseDB;
+
+-- Tabelle löschen
+drop table Students;
+*/ 
+
+
+
+/*********************************************************/
+/*******************  	Abfragen	**********************/
+/*********************************************************/
+/*
+= != <> > < >= <=
+and or
+like
+*/
+select * from Students;
+name muss mit k beginnen
+select * from Students where name like 'k%';
+name muss k enthalten
+select * from Students where name like '%k%';
+
+select * from Students where id = 2;
+select * from Students order by name;
+select * from Students where comment is null; -- nicht: ... comment = null
+select * from Students where comment is not null; 
+
+
+/*********************************************************/
+/*******************  Updates		**********************/
+/*********************************************************/
+
+insert into Students (name, areaCode, city, birthDate , gender, language, xml, html, fxml, comment)
+values ('Karo',  1100, 'Vienna', '1995-06-10', 'FEMALE', 'Deutsch', 1, 0, 1, 'Very diligent student!');
+
+
+update Students set city='Wien', areaCode = 1010 where id = 1;
+
+delete from Students where id = 1;
+delete from Students where name like 'tom%';
+
+
+-- alle Tabellen einer Datenbank anzeigen
+show tables;
+
+-- alle Spalten einer Tabelle anzeigen
+show columns from Students;
+
+-- key-Spalten anzeigen
+select * from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE CONSTRAINT_SCHEMA='CourseDB';
+
+
+
+
+
+

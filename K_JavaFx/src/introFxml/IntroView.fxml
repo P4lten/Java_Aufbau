@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fxml>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<!-- fx:controller verknüpft den View mit einer Instanz der angegebenen Klasse fx:id gibt die ID für -->
+<!--	die Verknüpfung zu einem Controller-Feld an, wird auch für CSS verwendet id gibt die ID für die CSS-Selektoren -->
+<!--	an, gilt nicht für den Controller -->
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="10" vgap="10"
+	fx:controller="introFxml.IntroViewController" stylesheets="@Intro.css">
+	<padding>
+		<Insets bottom="10" top="10" left="10" right="10" />
+	</padding>
+	<children>
+		<Label id="lblTitle" text="Willkommen bei JavaFx mit FXML" GridPane.columnSpan="4"
+			GridPane.halignment="CENTER" />
+		<Label text="Dein Name:" GridPane.rowIndex="1" />
+		<TextField fx:id="txtName" GridPane.rowIndex="1" GridPane.columnIndex="1"
+			GridPane.columnSpan="2" />
+		<!-- Buttons -->
+		<!-- # meint hier den Controller -->
+		<Button text="Klick mich!" GridPane.columnIndex="1" GridPane.rowIndex="2" userData="KLICK1"
+			onAction="#onButtonKlick" />
+		<Button text="Klick 2" GridPane.columnIndex="2" GridPane.rowIndex="2" userData="KLICK2"
+			onAction="#onButtonKlick" />
+		<ListView fx:id="lvMessages" GridPane.columnIndex="1" GridPane.rowIndex="3"
+			GridPane.columnSpan="2" />
+	</children>
+</GridPane>
+

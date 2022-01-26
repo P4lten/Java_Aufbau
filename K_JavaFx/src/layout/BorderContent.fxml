@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.Group?>
+
+<!-- kann 5 Subkomponenten haben: top, bottom, right, left und center -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+	<padding>
+		<Insets top="20" right="10" bottom="20" left="10" />
+	</padding>
+
+	<left>
+		<VBox alignment="TOP_LEFT" styleClass="bordered-box">
+			<padding>
+				<Insets left="5" right="5" />
+			</padding>
+			<Label text="Left Content" styleClass="subtitle" />
+			<!-- hyperlink kann wie Button einen Action-Handler haben, ist nicht automatisch ein URL -->
+			<Hyperlink text="Part One"></Hyperlink>
+			<Hyperlink text="Part Two"></Hyperlink>
+			<Hyperlink text="Part Three"></Hyperlink>
+
+		</VBox>
+	</left>
+	<right>
+		<VBox alignment="CENTER" styleClass="bordered-box">
+			<padding>
+				<Insets left="5" right="5" />
+			</padding>
+			<!-- gedrehten Text in einer Group darstellen, sonst ist der Text-Node so breit wie der String 
+				ohne Rotation geschrieben brauchen würde -->
+			<Group>
+				<Text text="Right content" rotate="90" />
+			</Group>
+
+		</VBox>
+	</right>
+	<bottom>
+		<HBox alignment="CENTER" styleClass="bordered-box">
+			<children>
+				<Label text="Content of the bottom part" styleClass="title" />
+			</children>
+		</HBox>
+	</bottom>
+	<center>
+		<Label text="Content of the center part" alignment="CENTER"></Label>
+	</center>
+	<top>
+		<HBox alignment="CENTER" styleClass="bordered-box">
+			<children>
+				<Label text="Content of the top part" styleClass="title" />
+			</children>
+		</HBox>
+	</top>
+</BorderPane>
+
+

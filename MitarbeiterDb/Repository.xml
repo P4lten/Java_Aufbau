@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employeeRepository>
+    <employees>
+        <employee>
+            <mitarbeiterId>1</mitarbeiterId>
+            <name>Peter</name>
+            <geburtsdatum>2020-04-27</geburtsdatum>
+            <eintrittsdatum>2021-04-26</eintrittsdatum>
+            <typ>EXPERTE</typ>
+            <areaCode>3540</areaCode>
+            <city>Gilgen</city>
+            <gehalt>3000.0</gehalt>
+            <comment>Peter halt!</comment>
+            <bonus>0.0</bonus>
+        </employee>
+        <employee>
+            <mitarbeiterId>2</mitarbeiterId>
+            <name>Alex</name>
+            <geburtsdatum>1990-07-18</geburtsdatum>
+            <eintrittsdatum>2020-04-27</eintrittsdatum>
+            <typ>MANAGER</typ>
+            <areaCode>3540</areaCode>
+            <city>Gilgen</city>
+            <gehalt>4000.0</gehalt>
+            <comment>Alex halt!</comment>
+            <bonus>0.0</bonus>
+        </employee>
+        <employee>
+            <mitarbeiterId>4</mitarbeiterId>
+            <name>Johannes</name>
+            <geburtsdatum>2021-04-26</geburtsdatum>
+            <eintrittsdatum>2021-05-01</eintrittsdatum>
+            <typ>MANAGER</typ>
+            <areaCode>3546</areaCode>
+            <city>Abersee</city>
+            <gehalt>2500.0</gehalt>
+            <comment>Guter Angestellter!</comment>
+            <bonus>0.0</bonus>
+        </employee>
+        <employee>
+            <mitarbeiterId>5</mitarbeiterId>
+            <name>Thomas</name>
+            <geburtsdatum>2021-04-27</geburtsdatum>
+            <eintrittsdatum>2021-04-30</eintrittsdatum>
+            <typ>EXPERTE</typ>
+            <areaCode>7894</areaCode>
+            <city>Strobl</city>
+            <gehalt>5000.0</gehalt>
+            <comment>:D</comment>
+            <bonus>0.0</bonus>
+        </employee>
+        <employee>
+            <mitarbeiterId>6</mitarbeiterId>
+            <name>Kurti</name>
+            <geburtsdatum>2014-04-29</geburtsdatum>
+            <eintrittsdatum>2019-05-09</eintrittsdatum>
+            <typ>EXPERTE</typ>
+            <areaCode>9877</areaCode>
+            <city>Hallein</city>
+            <gehalt>5300.0</gehalt>
+            <comment>asdfa</comment>
+            <bonus>0.0</bonus>
+        </employee>
+    </employees>
+    <nextEmployeeId>8</nextEmployeeId>
+</employeeRepository>

@@ -1,0 +1,46 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-color: lightgoldenrodyellow; 
+}
+.label{
+	-fx-font-size: 14.0px;
+	
+}
+.title{
+	-fx-font-size: 18.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+.subtitle{
+	-fx-font-size: 16.0px;
+	-fx-font-weight: bold;
+}
+
+.bordered-box{
+	-fx-border-color: lightblue;
+	-fx-border-width: 2.0px;
+	-fx-border-style: solid;
+	-fx-border-insets: 2.0;
+	-fx-border-radius: 2.0;
+}
+
+.overlay-text{
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+.titled-content{
+	-fx-background-color: lightgoldenrodyellow;
+}
+
+ 
+.tooltip{
+	-fx-background-color: white;
+	-fx-border-color: goldenrod;
+	-fx-text-fill: darkgray;
+	-fx-font-size: 13px; 
+	-fx-padding: 2px;
+}
+

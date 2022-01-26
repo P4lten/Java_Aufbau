@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<studentRepository>
+    <students>
+        <student>
+            <id>1</id>
+            <name>Michaela</name>
+            <birthDate>1964-12-28</birthDate>
+            <gender>FEMALE</gender>
+            <areaCode>1140</areaCode>
+            <city>Wien</city>
+            <language>Deutsch</language>
+            <html>true</html>
+            <xml>true</xml>
+            <fxml>true</fxml>
+            <comment>Brave Studentin :-)!
+Student überprüft von Peter am 2021-05-04T13:09:28.828137100
+Student überprüft von Peter am 2021-05-04T13:09:38.796737800
+Student überprüft von Peter am 2021-05-04T13:09:41.426845600
+Student überprüft von Peter am 2021-05-04T13:10:21.251529900
+Student überprüft von Peter am 2021-05-04T13:10:32.741489800
+Student überprüft von Peter am 2021-05-04T13:10:45.269160700
+Student überprüft von Peter am 2021-05-09T16:08:03.812725300
+Student überprüft von Peter am 2021-05-09T16:08:11.862130400</comment>
+        </student>
+        <student>
+            <id>2</id>
+            <name>Bengi</name>
+            <birthDate>1974-11-09</birthDate>
+            <gender>MALE</gender>
+            <areaCode>1140</areaCode>
+            <city>Wien</city>
+            <language>English</language>
+            <html>true</html>
+            <xml>true</xml>
+            <fxml>false</fxml>
+            <comment>Very diligent pupil!
+Student überprüft von Peter am 2021-05-04T13:09:28.839109
+Student überprüft von Peter am 2021-05-04T13:09:38.805714500
+Student überprüft von Peter am 2021-05-04T13:09:41.435822
+Student überprüft von Peter am 2021-05-04T13:10:21.265493
+Student überprüft von Peter am 2021-05-04T13:10:32.754454800
+Student überprüft von Peter am 2021-05-04T13:10:45.278137800
+Student überprüft von Peter am 2021-05-09T16:08:03.822698700
+Student überprüft von Peter am 2021-05-09T16:08:11.872103500</comment>
+        </student>
+        <student>
+            <id>3</id>
+            <name>Tomma</name>
+            <birthDate>1972-10-14</birthDate>
+            <gender>OTHER</gender>
+            <areaCode>1060</areaCode>
+            <city>Wien</city>
+            <language>Deutsch</language>
+            <html>true</html>
+            <xml>false</xml>
+            <fxml>true</fxml>
+            <comment>Very nice person!
+Student überprüft von Peter am 2021-05-04T13:09:28.839109
+Student überprüft von Peter am 2021-05-04T13:09:38.805714500
+Student überprüft von Peter am 2021-05-04T13:09:41.435822
+Student überprüft von Peter am 2021-05-04T13:10:21.265493
+Student überprüft von Peter am 2021-05-04T13:10:32.754454800
+Student überprüft von Peter am 2021-05-04T13:10:45.279133900
+Student überprüft von Peter am 2021-05-09T16:08:03.822698700
+Student überprüft von Peter am 2021-05-09T16:08:11.873101400</comment>
+        </student>
+        <student>
+            <id>4</id>
+            <name>Karoline</name>
+            <birthDate>1997-10-06</birthDate>
+            <gender>FEMALE</gender>
+            <areaCode>1100</areaCode>
+            <city>Wien</city>
+            <language>Italiano</language>
+            <html>true</html>
+            <xml>true</xml>
+            <fxml>false</fxml>
+            <comment>Braves Mädel
+Student überprüft von Peter am 2021-05-04T13:09:28.839109
+Student überprüft von Peter am 2021-05-04T13:09:38.805714500
+Student überprüft von Peter am 2021-05-04T13:09:41.435822
+Student überprüft von Peter am 2021-05-04T13:10:21.265493
+Student überprüft von Peter am 2021-05-04T13:10:32.754454800
+Student überprüft von Peter am 2021-05-04T13:10:45.279133900
+Student überprüft von Peter am 2021-05-09T16:08:03.822698700
+Student überprüft von Peter am 2021-05-09T16:08:11.873101400</comment>
+        </student>
+        <student>
+            <id>5</id>
+            <name>Lisi</name>
+            <birthDate>2021-03-30</birthDate>
+            <gender>FEMALE</gender>
+            <areaCode>2000</areaCode>
+            <city>Schwechat</city>
+            <language>English</language>
+            <html>false</html>
+            <xml>false</xml>
+            <fxml>false</fxml>
+            <comment>
+Student überprüft von Peter am 2021-05-04T13:09:28.839109
+Student überprüft von Peter am 2021-05-04T13:09:38.806711800
+Student überprüft von Peter am 2021-05-04T13:09:41.435822
+Student überprüft von Peter am 2021-05-04T13:10:21.265493
+Student überprüft von Peter am 2021-05-04T13:10:32.754454800
+Student überprüft von Peter am 2021-05-04T13:10:45.279133900
+Student überprüft von Peter am 2021-05-09T16:08:03.822698700
+Student überprüft von Peter am 2021-05-09T16:08:11.873101400</comment>
+        </student>
+    </students>
+    <nextStudentId>6</nextStudentId>
+</studentRepository>

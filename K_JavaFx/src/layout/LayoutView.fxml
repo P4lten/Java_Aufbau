@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SingleSelectionModel?>
+
+<!--  TabPane mit beliebig vielen Tab-Child-Elementen -->
+<TabPane fx:id="tabsContent" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+	fx:controller="layout.LayoutController">
+	<tabs>
+
+		<Tab closable="false" text="Grid" id="tabGrid">
+			<content>
+				<!-- fx:id vom Include Element ist der name für das Attribut
+				über das der GridContent-Controller verfügbar ist
+				im LayoutController muss man dafür folgendes Attribut hinzufügen:
+				@FXML GridContentController gridController;
+				
+				 -->
+				<fx:include source="GridContent.fxml" fx:id="grid"></fx:include>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Border" id="tabBorder">
+			<content>
+				<fx:include source="BorderContent.fxml"></fx:include>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Anchor" id="tabAnchor">
+			<content>
+				<fx:include source="AnchorContent.fxml"></fx:include>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Flow" id="tabFlow">
+			<content>
+				<fx:include source="FlowContent.fxml"></fx:include>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Tile" id="tabTile">
+			<content>
+				<fx:include source="TileContent.fxml"></fx:include>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Stack" id="tabStack">
+			<content>
+				<fx:include source="StackContent.fxml"></fx:include>
+			</content>
+		</Tab>
+		<Tab closable="false" text="Accordion" id="tabAcc">
+			<content>
+				<fx:include source="AccordionContent.fxml"></fx:include>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>

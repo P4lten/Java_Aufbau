@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane hgap="20.0" vgap="20.0" xmlns="http://javafx.com/javafx/15.0.1"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.program.StudentTableController">
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+	<!-- caption -->
+	<Label styleClass="title" text="Student repository" GridPane.columnIndex="0"
+		GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+		<GridPane.margin>
+			<Insets bottom="20.0" />
+		</GridPane.margin>
+	</Label>
+
+
+	<!-- Table View -->
+	<TableView fx:id="tblStudents" prefHeight="400.0" prefWidth="446.0" GridPane.rowIndex="1"
+		onMouseClicked="#onClicked" onKeyPressed="#onKey">
+		<columns>
+			<TableColumn fx:id="colId" editable="false" prefWidth="75.0" text="ID" />
+			<TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+			<TableColumn fx:id="colBirthdate" editable="false" prefWidth="104.00001525878906"
+				text="Geburtsdatum" />
+			<TableColumn fx:id="colXml" prefWidth="75.0" text="XML" />
+			<TableColumn fx:id="colHtml" prefWidth="75.0" text="HTML" />
+		</columns>
+	</TableView>
+
+
+
+	<VBox fx:id="boxStudent" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="2">
+		<Label styleClass="subTitle" text="Selected Student" />
+		<HBox>
+			<Label styleClass="caption" text="Id: " />
+			<Label fx:id="lblId" text="TODO ID" />
+
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="Name: " />
+			<Label fx:id="lblName" text="TODO Name" />
+
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="Adresse: " />
+			<Label fx:id="lblAreaCode" text="TODO areaCode" />
+			<Label text=" " />
+			<Label fx:id="lblCity" text="TODO city" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="Geburtsdatum: " />
+			<Label text="${controller.selectedStudent.birthDate}" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="Geschlecht: " />
+			<Label text="${controller.selectedStudent.gender}" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="HTML: " />
+			<Label text="${controller.selectedStudent.html}" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="XML: " />
+			<Label text="${controller.selectedStudent.xml}" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="FXML: " />
+			<Label text="${controller.selectedStudent.fxml}" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="Sprache: " />
+			<Label text="${controller.selectedStudent.language}" />
+		</HBox>
+		<HBox>
+			<Label styleClass="caption" text="Kommentar: " />
+			<Label text="${controller.selectedStudent.comment}" />
+		</HBox>
+	</VBox>
+	<HBox spacing="10" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+		<Button fx:id="btnAdd" onAction="#addStudent" text="Neu" />
+		<Button fx:id="btnEdit" onAction="#editStudent" text="Bearbeiten" />
+		<Button fx:id="btnDelete" onAction="#deleteStudent" text="Löschen" />
+		<Button fx:id="btnReload" onAction="#reload" text="Neu laden" />
+
+	</HBox>
+	<columnConstraints>
+		<ColumnConstraints />
+		<ColumnConstraints />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+
+
+
+</GridPane>

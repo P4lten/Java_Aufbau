@@ -1,0 +1,108 @@
+.label, .check-box, .radio-button, .button{
+	-fx-font-size: 14.0px;
+	
+}
+
+.title{
+	-fx-font-size: 24.0px;
+	-fx-font-weight: bold;
+}
+
+
+.subTitle{
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+	
+}
+
+.caption{
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+ 
+ 
+.list-cell{
+    -fx-background-color: azure ;
+    -fx-font-size: 16.0px;
+
+}
+
+.list-cell:odd{
+    -fx-background-color: lightgray ;
+}
+
+.list-cell:selected{
+    -fx-background-color: lightslategray ;
+}
+
+.list-cell:hover{
+    -fx-text-fill: darkgray;
+    -fx-font-weight: bold;
+}
+
+.list-cell:empty {
+    -fx-background-color: white;
+}
+
+.number{
+	-fx-alignment: CENTER-RIGHT;
+}
+
+.center{
+	-fx-alignment: CENTER;
+}
+
+.gender-male{
+	-fx-text-fill: darkgoldenrod;
+}
+
+.gender-female{
+	-fx-text-fill: darkolivegreen  ;
+}
+
+.gender-other{
+	-fx-text-fill: darkviolet;
+}
+
+:validation-error{
+	-fx-border-color: red;
+	-fx-border-width: 2.0px;
+	-fx-border-style: dotted; 
+}
+
+/* für die ListCell-Objekte der Combobox */
+.combo-box > .list-cell {
+	
+    -fx-font-size: 12.0px;
+    
+    -fx-background-color: white;
+}
+
+
+
+
+.table-row-cell{
+    -fx-background-color: azure ;
+
+}
+
+.table-row-cell:odd{
+    -fx-background-color: lightgray ;
+}
+
+.table-row-cell:selected{
+    -fx-background-color: lightslategray ;
+   
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0.0px;
+}
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+<!-- die Knoten werden übereinander angezeigt (im Beispiel wird der Text über das Bild geschrieben -->
+<StackPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+	<ImageView scaleX="2.0" scaleY="2.0">
+		<image>
+			<Image url="@logo-wifi.gif" />
+		</image>
+	</ImageView>
+	<Text text="26.10.2016 Tag der offenen Tür" wrappingWidth="130" textAlignment="CENTER"
+		styleClass="overlay-text" fill="white" />
+</StackPane>
+

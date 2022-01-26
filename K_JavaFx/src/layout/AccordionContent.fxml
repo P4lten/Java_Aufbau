@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.TitledPane?>
+
+<!-- zeigt eines von mehreren Panels an -->
+<Accordion xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+	<panes>
+		<TitledPane text="Demo Content" expanded="true">
+			<content>
+				<VBox alignment="TOP_LEFT" styleClass="titled-content">
+					<padding>
+						<Insets left="5" right="5" />
+					</padding>
+					<!-- hyperlink kann wie Button einen Action-Handler haben, ist nicht automatisch ein URL -->
+					<Hyperlink text="Part One"></Hyperlink>
+					<Hyperlink text="Part Two"></Hyperlink>
+					<Hyperlink text="Part Three"></Hyperlink>
+
+				</VBox>
+			</content>
+
+		</TitledPane>
+		<TitledPane text="Exercises">
+			<content>
+				<VBox alignment="TOP_LEFT" styleClass="titled-content">
+					<padding>
+						<Insets left="5" right="5" />
+					</padding>
+					<!-- hyperlink kann wie Button einen Action-Handler haben, ist nicht automatisch ein URL -->
+					<Hyperlink text="Exercise One"></Hyperlink>
+					<Hyperlink text="Exercise Two"></Hyperlink>
+					<Hyperlink text="Exercise Three"></Hyperlink>
+
+				</VBox>
+			</content>
+
+		</TitledPane>
+	</panes>
+</Accordion>
+
+

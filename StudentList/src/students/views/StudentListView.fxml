@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.cell.TextFieldTableCell ?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ListView?>
+
+
+<GridPane hgap="20.0" vgap="20.0" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="students.program.StudentListController">
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+	<!-- caption -->
+	<Label styleClass="title" text="Student repository" GridPane.columnIndex="0"
+		GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+		<GridPane.margin>
+			<Insets bottom="20.0" />
+		</GridPane.margin>
+	</Label>
+
+	<!-- ListView, mit Property Binding an die Property studentList (getter getStudentList) gebunden -->
+	<ListView fx:id="lstStudents" GridPane.rowIndex="1" GridPane.columnIndex="0" minWidth="250"	
+		onMouseClicked="#onClicked" onKeyPressed="#onKey"/>
+
+	<VBox fx:id="boxStudent" GridPane.columnIndex="1" GridPane.rowIndex="1" spacing="5" >
+		<Label text="Selected Student" styleClass="subTitle" />
+		<HBox>
+			<Label text="Id: " styleClass="caption" />
+			<Label fx:id="lblId" text="TODO ID" />
+
+		</HBox>
+		<HBox>
+			<Label text="Name: " styleClass="caption" />
+			<Label fx:id="lblName" text="TODO Name" />
+
+		</HBox>
+		<HBox>
+			<Label text="Adresse: " styleClass="caption" />
+			<Label fx:id="lblAreaCode"  text="TODO areaCode" />
+			<Label text=" " />
+			<Label fx:id="lblCity" text="TODO city" />
+		</HBox>
+		<HBox>
+			<Label text="Geburtsdatum: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.birthDate}" />
+		</HBox>
+		<HBox>
+			<Label text="Geschlecht: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.gender}" />
+		</HBox>
+		<HBox>
+			<Label text="HTML: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.html}" />
+		</HBox>
+		<HBox>
+			<Label text="XML: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.xml}" />
+		</HBox>
+		<HBox>
+			<Label text="FXML: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.fxml}" />
+		</HBox>
+		<HBox>
+			<Label text="Sprache: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.language}" />
+		</HBox>
+		<HBox>
+			<Label text="Kommentar: " styleClass="caption" />
+			<Label text="${controller.selectedStudent.comment}" />
+		</HBox>
+	</VBox>
+
+	<HBox GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4" spacing="10">
+		<Button fx:id="btnAdd" text="Neu" onAction="#addStudent" />
+		<Button fx:id="btnEdit" text="Bearbeiten" onAction="#editStudent" />
+		<Button fx:id="btnDelete" text="Löschen" onAction="#deleteStudent" />
+		<Button fx:id="btnReload" text="Neu laden" onAction="#reload" />
+
+	</HBox>
+
+
+
+</GridPane>

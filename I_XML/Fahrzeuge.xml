@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fahrzeuge>
+    <fahrzeug xsi:type="auto" nr="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <marke>Mercedes</marke>
+        <preis>30000.0</preis>
+        <erzeugt>2019-12-15</erzeugt>
+        <leistung>110</leistung>
+        <farbe>Silber</farbe>
+    </fahrzeug>
+    <fahrzeug xsi:type="lkw" nr="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <marke>MAN</marke>
+        <preis>150000.0</preis>
+        <erzeugt>2020-10-02</erzeugt>
+        <leistung>320</leistung>
+        <farbe>Rot</farbe>
+        <maximalGewicht>8000</maximalGewicht>
+        <ladeflaeche>100.0</ladeflaeche>
+        <achsen>3</achsen>
+    </fahrzeug>
+    <fahrzeug xsi:type="fahrrad" nr="3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <marke>KTM</marke>
+        <preis>2000.0</preis>
+        <erzeugt>2020-05-21</erzeugt>
+        <rahmengroesse>27.0</rahmengroesse>
+        <typ>Mountainbike</typ>
+    </fahrzeug>
+    <fahrzeug xsi:type="auto" nr="4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <marke>Porsche</marke>
+        <preis>50000.0</preis>
+        <erzeugt>2021-04-20</erzeugt>
+        <leistung>300</leistung>
+        <farbe>Schwarz</farbe>
+    </fahrzeug>
+    <nextNummer>5</nextNummer>
+</fahrzeuge>

@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-font-family: "Verdana";
+	-fx-background-color: grey;
+}
+.label{
+	-fx-font-size: 14.0px;
+	
+}
+
+/* #id ... die Styles gelten für ein Control mit dieser ID  */
+#lblTitle{
+	-fx-font-size: 18.0px;
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
